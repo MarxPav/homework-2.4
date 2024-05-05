@@ -24,7 +24,7 @@ public class CalculatorController {
         return num1 + " + " + num2 + " = " + calculatorService.plus(num1,num2);
         if (num1 == null || num2 = null) {
             return "Оба аргумента обязательны!";
-        };
+        }
     }
     @GetMapping("minus")
     public String minus(@RequestParam(required = false, name = "num1") Integer num1, @RequestParam(required = false, name = "num2") Integer num2) {
